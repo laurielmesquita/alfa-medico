@@ -8,6 +8,9 @@
 ================================================
 */
 /* Basics */
+.bg-teste {
+	background: green;
+}
 body {
 	background-color: #f9f9f9;
   color: #909394;
@@ -106,8 +109,8 @@ p { line-height: 1.422169; }
 }
 .navbar-header h1 {
 	float: left;
-	width: 75%;
 	margin: 0 0 10px 0;
+	width: 75%;
 	font-size: 1.8em;
 }
 .navbar-header h1 a {
@@ -129,8 +132,8 @@ p { line-height: 1.422169; }
 }
 input.main-input {
 	float: left;
-	width: 80%;
 	padding: 11px 0 7px 12px;
+	width: 80%;
 	border: none;
 	background-color: transparent;
 	color: #fff;
@@ -161,13 +164,13 @@ input.main-input {
 	background-color: #34373a;
 }
 .navbar-header {
+	border-bottom: 1px solid #74777b;
 	color: #fff;
 	text-transform: uppercase;
-	border-bottom: 1px solid #74777b;
 }
 .navbar-collapse {
-	padding-left: 0;
 	padding-right: 0;
+	padding-left: 0;
 }
 .navbar-header .navbar-toggle {
 	margin: 0 0 20px 0;
@@ -271,14 +274,14 @@ input.main-input {
 
 /* SOCIAL RULES */
 .alfa-social .btn {
+	-webkit-border-radius:0;
+	-moz-border-radius:0;
+	border-radius:0;
 	background-color: #34373a;
 	color: #fff;
 	text-align: center;
 	font-size: 20px;
 	font-family: "alfa";
-	-webkit-border-radius:0;
-	-moz-border-radius:0;
-	border-radius:0;
 }
 .alfa-social .btn:hover {
 	background-color: #4E5154;
@@ -372,7 +375,7 @@ html[xmlns] .slides {display: block;}
 .main-slider-container,
 .flexslider {
 	position: relative;
-	margin: 0 0 60px;
+	margin: 0 0 40px;
 	background: #fff;
 	zoom: 1;
 }
@@ -525,6 +528,41 @@ a.slider-btn .alfa-plus {
 	margin-right: 25px;
 	font-size: 12px;
 	line-height: 20px;
+}
+
+/* TITLES */
+.top-features {
+	padding-bottom: 15px;
+	border-bottom: 5px solid #ebebeb;
+}
+@media (max-width: 990px) {
+	.top-features {
+		margin-bottom: 20px;
+	}
+}
+.title-icon-front {
+	display: inline-block;
+	float: left;
+	margin: 0 20px 25px 0;
+	width: 66px;
+	height: 66px;
+	text-align: center;
+	font-size:17px;
+	line-height: 35px;
+}
+.title-front {
+	color: #34373a;
+}
+
+/* ICONS */
+.icon-1 {
+	background: url(../images/design/icon-1.png) transparent 0 0;
+}
+.icon-2 {
+	background: url(../images/design/icon-2.png) transparent 0 0;
+}
+.icon-3 {
+	background: url(../images/design/icon-3.png) transparent 0 0;
 }
 
 /* COLORS RULES */
