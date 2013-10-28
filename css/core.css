@@ -530,11 +530,69 @@ a.slider-btn .alfa-plus {
 	line-height: 20px;
 }
 
-/* TITLES */
-.top-features {
+/* CONTENTS RULES */
+.content-box {
+	clear: both;
+}
+.item-thumbs {
+	position: relative;
+	overflow: hidden;
+	margin-bottom: 30px;
+	cursor: pointer;
+}
+.hover-wrap {
+	position: absolute;
+	display: block;
+	width: 100%;
+	height: 100%;
+
+	opacity: 0;
+	filter: alpha(opacity=0);
+	-webkit-transition: all 450ms ease-out 0s;
+	-moz-transition: all 450ms ease-out 0s;
+	-o-transition: all 450ms ease-out 0s;
+	transition: all 450ms ease-out 0s;
+	-webkit-transform: rotateY(180deg) scale(0.5,0.5);
+	-moz-transform: rotateY(180deg) scale(0.5,0.5);
+	-ms-transform: rotateY(180deg) scale(0.5,0.5);
+	-o-transform: rotateY(180deg) scale(0.5,0.5);
+	transform: rotateY(180deg) scale(0.5,0.5);
+}
+.overlay-img {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background: #40b598;
+	opacity: 0.80;
+	filter: alpha(opacity=80);
+}
+.overlay-img-ico {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin: -16px 0 0 -16px;
+	color: #fff;
+	font-size: 32px;
+	line-height: 1em;
+	opacity: 1;
+	filter: alpha(opacity=100);
+}
+.item-thumbs:hover .hover-wrap,
+.item-thumbs.active .hover-wrap {
+	opacity: 1;
+	filter: alpha(opacity=100);
+	-webkit-transform: rotateY(0deg) scale(1,1);
+	-moz-transform: rotateY(0deg) scale(1,1);
+	-ms-transform: rotateY(0deg) scale(1,1);
+	-o-transform: rotateY(0deg) scale(1,1);
+	transform: rotateY(0deg) scale(1,1);
+}
+.border-content {
 	padding-bottom: 15px;
 	border-bottom: 5px solid #ebebeb;
 }
+
+/* TITLES RULES */
 @media (max-width: 990px) {
 	.top-features {
 		margin-bottom: 20px;
@@ -546,23 +604,39 @@ a.slider-btn .alfa-plus {
 	margin: 0 20px 25px 0;
 	width: 66px;
 	height: 66px;
+	color: #40b598;
+	border: 3px solid #cfcfcf;
+	border-radius: 100% !important;
+	font-size: 29px;
+	line-height: 58px;
 	text-align: center;
-	font-size:17px;
-	line-height: 35px;
+	font-style: normal;
 }
 .title-front {
 	color: #34373a;
 }
+.heading {
+	text-transform: uppercase;
+	font-size: 19px;
+  font-family: "SourceSansPro-Se";
+}
 
-/* ICONS */
-.icon-1 {
-	background: url(../images/design/icon-1.png) transparent 0 0;
+/* ICONS RULES */
+[class^="icon-"],
+[class*=" icon-"] {
+	font-family: 'alfa';
 }
-.icon-2 {
-	background: url(../images/design/icon-2.png) transparent 0 0;
+.icon-1:before {
+	content: "\e135";
 }
-.icon-3 {
-	background: url(../images/design/icon-3.png) transparent 0 0;
+.icon-2:before {
+	content: "\e0f8";
+}
+.icon-3:before {
+	content: "\e11e";
+}
+.icon-4:before {
+	content: "\e1c8";
 }
 
 /* COLORS RULES */
