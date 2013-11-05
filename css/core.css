@@ -484,9 +484,8 @@ html[xmlns] .slides {display: block;}
   .flex-direction-nav .flex-next { right: 10px; opacity: 1;}
 }
 @media (max-width: 992px) {
-  .main-slider-container {
-    margin-top: 20px;
-  }
+  .main-slider-container { margin-top: 20px; }
+  .flex-direction-nav a { display: none !important; }
 }
 
 /* SLIDER OTHER RULES */

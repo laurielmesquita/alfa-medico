@@ -5355,8 +5355,15 @@ a.list-group-item:focus {
 }
 
 .panel-body {
-  padding: 10px 20px 15px 20px;
+  padding: 0 20px 15px 20px;
   background-color: #ebebeb;
+}
+
+.panel-body a {
+	color: #909394;
+}
+.panel-body a:hover {
+	color: #34373a;
 }
 
 .panel-body:before,
@@ -5423,8 +5430,17 @@ a.list-group-item:focus {
 
 .panel-title > a {
   color: inherit;
-  padding: 15px 20px;
+  padding: 15px 20px 15px 15px;
   display: block;
+}
+
+.panel-title a,
+.panel-collapse {
+	border-left: 5px solid #40b598;
+}
+
+.panel-title a.collapsed {
+	border-left: 5px solid #d7d7d7;
 }
 
 .panel-footer {
