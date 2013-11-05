@@ -377,7 +377,7 @@ img {
 .img-responsive {
   display: block;
   height: auto;
-  max-width: 100%;
+  width: 100%;
 }
 
 .img-rounded {
@@ -5351,11 +5351,12 @@ a.list-group-item:focus {
   border: 1px solid transparent;
   border-radius: 4px;
   -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
-          box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
 }
 
 .panel-body {
-  padding: 0;
+  padding: 10px 20px 15px 20px;
+  background-color: #ebebeb;
 }
 
 .panel-body:before,
@@ -5408,7 +5409,7 @@ a.list-group-item:focus {
 }
 
 .panel-heading {
-  padding: 10px 15px;
+  padding: 0;
   border-bottom: 1px solid transparent;
   border-top-right-radius: 3px;
   border-top-left-radius: 3px;
@@ -5417,11 +5418,13 @@ a.list-group-item:focus {
 .panel-title {
   margin-top: 0;
   margin-bottom: 0;
-  font-size: 16px;
+  font-size: 18px;
 }
 
 .panel-title > a {
   color: inherit;
+  padding: 15px 20px;
+  display: block;
 }
 
 .panel-footer {
@@ -5435,11 +5438,11 @@ a.list-group-item:focus {
 .panel-group .panel {
   margin-bottom: 0;
   overflow: hidden;
-  border-radius: 4px;
+  border-radius: 0px;
 }
 
 .panel-group .panel + .panel {
-  margin-top: 5px;
+  margin-top: 1px;
 }
 
 .panel-group .panel-heading {
@@ -5459,17 +5462,24 @@ a.list-group-item:focus {
 }
 
 .panel-default {
-  border-color: #dddddd;
+  /* border-color: #dddddd; */
+  border: none;
 }
 
 .panel-default > .panel-heading {
   color: #333333;
-  background-color: #f5f5f5;
   border-color: #dddddd;
 }
 
+.panel-default > .panel-heading a {
+  background-color: #ebebeb;
+}
+.panel-default > .panel-heading a.collapsed {
+  background-color: #d7d7d7;
+}
+
 .panel-default > .panel-heading + .panel-collapse .panel-body {
-  border-top-color: #dddddd;
+  border: none;
 }
 
 .panel-default > .panel-footer + .panel-collapse .panel-body {
