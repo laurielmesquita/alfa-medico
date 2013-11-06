@@ -1,6 +1,6 @@
 $(window).load(function() {
 	$('.alfa-slider').flexslider({
-		slideshow: false,
+		slideshow: true,
 		animation: "slide",
 		easing: "easeInOutQuint",
 		controlNav: false,
@@ -10,4 +10,15 @@ $(window).load(function() {
 		multipleKeyboard: true,
 		controlsContainer: ".main-slider-container",
 	});
+
+	$('.flexslider2').flexslider({
+    slideshow: true,
+    animation: "slide",
+		easing: "easeInOutQuint",
+		controlNav: false,
+		prevText: "",
+		nextText: "",
+    animationLoop: false,
+		controlsContainer: ".slider2",
+  });
 });
