@@ -11,14 +11,12 @@ $(window).load(function() {
 		controlsContainer: ".main-slider-container",
 	});
 
-	$('.flexslider2').flexslider({
-    slideshow: true,
+	$('.slider2').flexslider({
+    slideshow: false,
     animation: "slide",
 		easing: "easeInOutQuint",
-		controlNav: false,
 		prevText: "",
 		nextText: "",
     animationLoop: false,
-		controlsContainer: ".slider2",
   });
 });
