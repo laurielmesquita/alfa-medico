@@ -608,7 +608,8 @@ a.slider-btn .alfa-plus {
 	opacity: 0.80;
 	filter: alpha(opacity=80);
 }
-.overlay-img-ico {
+.overlay-img-ico,
+.overlay-img-ico-2 {
 	position: absolute;
 	top: 50%;
 	left: 50%;
@@ -618,6 +619,10 @@ a.slider-btn .alfa-plus {
 	line-height: 1em;
 	opacity: 1;
 	filter: alpha(opacity=100);
+}
+.overlay-img-ico-2 {
+	margin: -23px 0 0 -23px;
+	font-size: 46px;
 }
 .item-thumbs:hover .hover-wrap,
 .item-thumbs.active .hover-wrap {
@@ -640,6 +645,19 @@ a.slider-btn .alfa-plus {
 .border-content:hover {
 	border-color: #9CA0A2;
 }
+.overlay-img-text {
+	padding: 10px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	color: #fff;
+	font-size: 22px;
+	opacity: 1;
+	filter: alpha(opacity=100);
+	background: red;
+	text-align: center;
+}
+
 /* DATE RULES */
 .date {
 	display: block;
@@ -671,7 +689,8 @@ a.slider-btn .alfa-plus {
 .heading {
 	text-transform: uppercase;
 	font-size: 19px;
-  font-family: "SourceSansPro-Re";
+  font-family: "SourceSansPro-Se";
+  color: #949696;
 }
 
 /* ICONS RULES */
@@ -725,6 +744,9 @@ a.slider-btn .alfa-plus {
 }
 .icon-7:before {
 	content: "\e0df";
+}
+.icon-8:before {
+	content: "\e251";
 }
 
 /* LISTS RULES  */

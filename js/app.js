@@ -10,7 +10,6 @@ $(window).load(function() {
 		multipleKeyboard: true,
 		controlsContainer: ".main-slider-container",
 	});
-
 	$('.slider2').flexslider({
     slideshow: false,
     animation: "slide",
