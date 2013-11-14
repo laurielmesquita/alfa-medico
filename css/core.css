@@ -4,12 +4,15 @@
              Website:	Alpha Médico Hospitalar
          Description:	HTML5/OOCSS3
  Layout online since:	2013
-         Last Change:	6.11.2013
+         Last Change:	14.11.2013
 ================================================
 */
 /* Basics */
-.bg-teste {
+.bg-test {
 	background: green;
+}
+.bg-test2 {
+	background: aqua;
 }
 body {
 	background-color: #f9f9f9;
@@ -88,6 +91,9 @@ p { line-height: 1.422169; }
 /* GENERAL RULES */
 [class^="col-"] {
 	margin-bottom: 50px;
+}
+.ct-footer [class^="col-"] {
+	margin-bottom: 30px;
 }
 .a-container {
   position: relative;
@@ -301,41 +307,6 @@ input.main-input {
 }
 .ico-google:before {
 	content: "\e358";
-}
-
-/* FOOTER RULES */
-.main-footer {
-	background-color: #34373a;
-	color: #fff;
-}
-.content-1 {
-	padding: 40px;
-}
-.main-footer .span5 p {
-	margin-left: 40px;
-	color: #a9acad;
-}
-.main-footer .span5:last-of-type {
-	float: right;
-}
-.main-footer .span5:last-of-type p:first-of-type {
-	float: left;
-}
-.main-footer .span5:last-of-type p:last-of-type {
-	float: right;
-}
-.header-2 {
-	display: block;
-	float: left;
-}
-.header-2 h1 {
-	margin: 60px 100px 0;
-}
-.header-2 h3 {
-	margin: 10px 100px 0;
-}
-.header-2 h1 {
-	font-size: 35px;
 }
 
 /* SLIDER RULES */
@@ -646,16 +617,16 @@ a.slider-btn .alfa-plus {
 	border-color: #9CA0A2;
 }
 .overlay-img-text {
-	padding: 10px;
 	position: absolute;
 	top: 0;
 	left: 0;
+	padding: 10px;
+	background: red;
 	color: #fff;
+	text-align: center;
 	font-size: 22px;
 	opacity: 1;
 	filter: alpha(opacity=100);
-	background: red;
-	text-align: center;
 }
 
 /* DATE RULES */
@@ -687,10 +658,10 @@ a.slider-btn .alfa-plus {
 	color: #34373a;
 }
 .heading {
+  color: #949696;
 	text-transform: uppercase;
 	font-size: 19px;
   font-family: "SourceSansPro-Se";
-  color: #949696;
 }
 
 /* ICONS RULES */
@@ -748,6 +719,29 @@ a.slider-btn .alfa-plus {
 .icon-8:before {
 	content: "\e251";
 }
+.icon-9 {
+	margin-left: 10px;
+	font-size: 13px;
+}
+.icon-9:before {
+	content: "\37";
+}
+.icon-10,
+.icon-11,
+.icon-12 {
+	margin-right: 10px;
+	vertical-align: middle;
+	line-height: 20px;
+}
+.icon-10:before {
+	content: "\e3b8";
+}
+.icon-11:before {
+	content: "\e04f";
+}
+.icon-12:before {
+	content: "\e046";
+}
 
 /* LISTS RULES  */
 .list-a {
@@ -766,18 +760,85 @@ a.slider-btn .alfa-plus {
 	color: #fff;
 }
 
+/* FOOTER RULES */
+.ct-footer {
+	margin: 0;
+	padding: 40px 30px 0;
+	background-color: #34373a;
+}
+.ct-footer .heading {
+	margin-bottom: 10px;
+	color: #fff;
+}
+.ct-footer .form-group {
+	margin-bottom: 20px;
+}
+.ct-footer .form-control {
+	height: 50px;
+	border: none;
+	background-color: #434547;
+	color: #fff;
+}
+.ct-footer textarea.form-control {
+	padding-top: 15px;
+	height: auto;
+}
+.btn-footer {
+	float: right;
+	padding: 15px 20px;
+	width: 100%;
+  border: none;
+  background-color: #1B1E21;
+  color: #fff;
+}
+.btn-footer:hover {
+	background-color: #40b598;
+}
+.box-footer {
+	margin-bottom: 35px;
+}
+.vert-nav a {
+	display: block;
+	line-height: 24px;
+}
+.ct-footer a {
+	color: #909394;
+}
+.ct-footer a:hover {
+	color: #40b598;
+}
+.content-info {
+	padding: 15px 0 20px;
+	border-top: 1px solid #909394;
+	text-align: center;
+	font-size: 12px;
+}
+
 /* FIX RULES */
+.mg-0 {
+	margin: 0;
+}
 .mt-1 {
 	margin-top: 50px;
 }
 .mb-0 {
-	margin-bottom: 0;
+	margin-bottom: 0 !important;
 }
 .mb-1 {
 	margin-bottom: 5px;
 }
+.mb-2 {
+	display: block;
+	margin-bottom: 15px;
+}
 .bb-0 {
 	border-bottom: none;
+}
+.flt-rt {
+	float: right;
+}
+.pd-0 {
+	padding: 0;
 }
 
 /* ANIMATION TIMER RULES */
@@ -786,7 +847,8 @@ img,
 .title-icon-front,
 .icon-5,
 .icon-6,
-.slider2 .flex-direction-nav a {
+.slider2 .flex-direction-nav a,
+.btn-footer {
 	-webkit-transition: 0.35s  ease-in-out;
 	-moz-transition: 0.35s ease-in-out;
 	-o-transition: 0.35s ease-in-out;
