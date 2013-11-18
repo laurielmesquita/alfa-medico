@@ -31,6 +31,7 @@ textarea {
 }
 a {
 	color: #000;
+	display: block;
   text-decoration: none;
 }
 a:hover {
@@ -711,6 +712,12 @@ a.slider-btn .alfa-plus {
 }
 .icon-12:before {
 	content: "\e046";
+}
+
+/* TABS RULES */
+.tabs-pane {
+	padding: 31px 20px 13px;
+	background-color: #ebebeb;
 }
 
 /* LISTS RULES  */

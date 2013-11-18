@@ -3862,7 +3862,7 @@ textarea.input-group-sm > .input-group-btn > .btn {
 .nav .open > a:hover,
 .nav .open > a:focus {
   background-color: #eeeeee;
-  border-color: #428bca;
+	border: none;
 }
 
 .nav .nav-divider {
@@ -3877,23 +3877,28 @@ textarea.input-group-sm > .input-group-btn > .btn {
 }
 
 .nav-tabs {
-  border-bottom: 1px solid #dddddd;
+  border-bottom: transparent;
 }
 
 .nav-tabs > li {
   float: left;
-  margin-bottom: -1px;
+  margin-bottom: -2px;
 }
 
 .nav-tabs > li > a {
+	padding: 20px;
   margin-right: 2px;
   line-height: 1.428571429;
-  border: 1px solid transparent;
-  border-radius: 4px 4px 0 0;
+  border: none;
+  border-radius: 0;
+  color: #fff;
+  text-transform: uppercase;
+  background-color: #34373a;
 }
 
 .nav-tabs > li > a:hover {
-  border-color: #eeeeee #eeeeee #dddddd;
+  border-color: none;
+  background-color: #40b598;
 }
 
 .nav-tabs > li.active > a,
@@ -3901,9 +3906,8 @@ textarea.input-group-sm > .input-group-btn > .btn {
 .nav-tabs > li.active > a:focus {
   color: #555555;
   cursor: default;
-  background-color: #ffffff;
-  border: 1px solid #dddddd;
-  border-bottom-color: transparent;
+  background-color: #ebebeb;
+  border: none;
 }
 
 .nav-tabs.nav-justified {
