@@ -855,10 +855,15 @@ img,
 .icon-6,
 .slider2 .flex-direction-nav a,
 .btn-footer,
-.main-nav span,
-.icon-10 {
+.main-nav span {
 	-webkit-transition: 0.35s  ease-in-out;
 	-moz-transition: 0.35s ease-in-out;
 	-o-transition: 0.35s ease-in-out;
 	transition: 0.35s ease-in-out;
+}
+.content-padd .icon-10 {
+	-webkit-transition: 0.25s  ease-in-out;
+	-moz-transition: 0.25s ease-in-out;
+	-o-transition: 0.25s ease-in-out;
+	transition: 0.25s ease-in-out;
 }
