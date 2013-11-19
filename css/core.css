@@ -30,8 +30,8 @@ textarea {
   font-family: "SourceSansPro-Re", sans-serif;
 }
 a {
-	color: #000;
 	display: block;
+	color: #000;
   text-decoration: none;
 }
 a:hover {
@@ -63,8 +63,9 @@ input[type="file"] > input[type="button"]::-moz-focus-inner {
 *:after,
 *::before {
     -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
+		-moz-box-sizing: border-box;
+		box-sizing: border-box;
+		-ms-box-sizing: border-box;
 }
 
 /* TYPOGRAPHY RULES */
@@ -208,8 +209,8 @@ input.main-input {
 	position: relative;
 	display: block;
 	margin-bottom: 1px;
-	color: #fff;
 	padding: 12px 0 12px 20px;
+	color: #fff;
 }
 .main-nav a span {
 	position: absolute;
@@ -218,9 +219,9 @@ input.main-input {
 	margin: 0;
 	width: 41px;
 	height: 41px;
-	line-height: 41px;
-	text-align: center;
 	background-color: #40b598;
+	text-align: center;
+	line-height: 41px;
 	opacity: 0;
 }
 .main-nav a:hover span,
@@ -495,11 +496,26 @@ a.slider-btn .alfa-plus {
 .slider2 .flex-direction-nav .flex-disabled {opacity: .6!important; filter:alpha(opacity=60); cursor: default;}
 .slider2 .flex-control-nav {display:none;}
 
-
-
 /* CONTENTS RULES */
 .content-box {
 	clear: both;
+}
+.content-padd {
+	background-color: #fff;
+}
+.content-padd h3,
+.content-padd p {
+	padding: 0 30px;
+}
+.link-full {
+	margin-top: 30px;
+	padding: 15px 30px;
+	color: #8e9293;
+	background-color: #ebebeb;
+}
+.content-padd:hover .link-full {
+	color: #fff;
+	background-color: #40b598;
 }
 .figure-box {
 	margin-bottom: 30px;
@@ -622,9 +638,9 @@ a.slider-btn .alfa-plus {
 	text-transform: uppercase;
 }
 .heading-2 {
-	font-family: "SourceSansPro-Re";
-	margin: 0;
+	margin-bottom: 20px;
 	color: #2e3134;
+	font-family: "SourceSansPro-Re";
 }
 .sub-heading {
 	margin-bottom: 20px;
@@ -703,6 +719,13 @@ a.slider-btn .alfa-plus {
 	margin-right: 10px;
 	vertical-align: middle;
 	line-height: 20px;
+}
+.content-padd .icon-10 {
+	margin-right: 0;
+	margin-left: 15px;
+}
+.content-padd:hover .icon-10 {
+	margin-left: 25px;
 }
 .icon-10:before {
 	content: "\e3b8";
@@ -832,7 +855,8 @@ img,
 .icon-6,
 .slider2 .flex-direction-nav a,
 .btn-footer,
-.main-nav span {
+.main-nav span,
+.icon-10 {
 	-webkit-transition: 0.35s  ease-in-out;
 	-moz-transition: 0.35s ease-in-out;
 	-o-transition: 0.35s ease-in-out;
