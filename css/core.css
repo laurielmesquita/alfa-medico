@@ -4,7 +4,7 @@
              Website:	Alpha Médico Hospitalar
          Description:	HTML5/OOCSS3
  Layout online since:	2013
-         Last Change:	14.11.2013
+         Last Change:	21.11.2013
 ================================================
 */
 /* Basics */
@@ -30,7 +30,6 @@ textarea {
   font-family: "SourceSansPro-Re", sans-serif;
 }
 a {
-	display: block;
 	color: #000;
   text-decoration: none;
 }
@@ -103,6 +102,9 @@ p { line-height: 1.422169; }
 .content-ld {
 	margin-top: 70px;
 }
+iframe {
+	border: 0;
+}
 
 /* MAIN HEADER RULES */
 .navbar-header {
@@ -168,6 +170,23 @@ input.main-input {
 	float: right;
 	content: "\e0dc";
 	font-family: "alfa";
+}
+/* NEWS SEARCH RULES */
+.news-search {
+	margin-top: 10px;
+	width: 100%;
+}
+.news-search-ct {
+	width: 100%;
+	border: 1px solid #cfcfcf;
+	background-color: #fff;
+}
+input.news-input {
+	padding: 11px 0 7px 12px;
+	width: 85%;
+	border: none;
+	background-color: #fff;
+	color: #fff;
 }
 
 /* MAIN NAV RULES */
@@ -505,13 +524,65 @@ a.slider-btn .alfa-plus {
 .slider2 .flex-control-nav {display:none;}
 
 /* CONTENTS RULES */
-.content-box {
+.bar-info {
+	padding: 10px 0;
+	border-top: 1px solid #cfcfcf;
+	border-bottom: 1px solid #cfcfcf;
+}
+.bar-division {
+	text-align: center;
+	border-top: 1px solid #cfcfcf;
+}
+.fig-hover {
+	display: block;
+	overflow: hidden;
+	margin-bottom: 20px;
+	background-color: #fff;
+}
+.fig-hover:hover img {
+	opacity: .85;
+	filter:alpha(opacity=85);
+	-webkit-transform: scale(1.05);
+	-moz-transform: scale(1.05);
+	-ms-transform: scale(1.05);
+	-o-transform: scale(1.05);
+	transform: scale(1.05);
+}
+.read-more {
+	display: block;
+	float: right;
+	margin-top: 7px;
+	font-size: 18px;
+}
+.tags-link {
+	padding: 5px 9px;
+	color: #ff4b64;
+	line-height: 20px;
+}
+.tags-link:hover {
+	padding: 5px 9px;
+	background-color: #ff4b64;
+	color: #fff;
+	line-height: 20px;
+}
+.content-box,
+.content-inner,
+.content-blog {
 	clear: both;
 }
-.content-inner {
+.bar-info {
+	margin-bottom: 20px;
+}
+.content-inner,
+.figure-box,
+.content-video {
 	margin-bottom: 30px;
 }
-.content-inner:last-of-type {
+.content-blog {
+	margin-bottom: 50px;
+}
+.content-inner:last-of-type,
+.content-blog:last-of-type {
 	margin-bottom: 0;
 }
 .content-inner p {
@@ -525,17 +596,15 @@ a.slider-btn .alfa-plus {
 	padding: 0 30px;
 }
 .link-full {
+	display: block;
 	margin-top: 30px;
 	padding: 15px 30px;
-	color: #8e9293;
 	background-color: #ebebeb;
+	color: #8e9293;
 }
 .content-padd:hover .link-full {
-	color: #fff;
 	background-color: #40b598;
-}
-.figure-box {
-	margin-bottom: 30px;
+	color: #fff;
 }
 .item-thumbs {
 	position: relative;
@@ -617,6 +686,20 @@ a.slider-btn .alfa-plus {
 	opacity: 1;
 	filter: alpha(opacity=100);
 }
+.content-video {
+    position: relative; overflow: hidden;
+    padding-top: 30px;
+    padding-bottom: 56.25%; height: 0;
+}
+.content-video iframe,
+.content-video object,
+.content-video embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
 
 /* DATE RULES */
 .date {
@@ -643,13 +726,17 @@ a.slider-btn .alfa-plus {
 .border-content:hover .title-icon-front {
 	border-color: #40b598;
 }
-.title-front {
-	color: #34373a;
+h1.title-front-news {
+	margin-bottom: 40px;
+	padding-bottom: 35px;
+	border-bottom: 1px solid #cfcfcf;
 }
 .heading-1 {
+	margin-top: 0;
 	text-transform: uppercase;
 }
-.heading-2 {
+.heading-2,
+.heading-news {
 	margin-bottom: 20px;
 }
 .heading-3 {
@@ -749,6 +836,19 @@ a.slider-btn .alfa-plus {
 	vertical-align: middle;
 	line-height: 20px;
 }
+.icon-13,
+.icon-14,
+.icon-15 {
+	margin-right: 5px;
+}
+.icon-14,
+.icon-15 {
+	margin-left: 15px;
+}
+.icon-16,
+.icon-19 {
+	margin-left: 10px;
+}
 .content-padd .icon-10 {
 	margin-right: 0;
 	margin-left: 15px;
@@ -765,6 +865,27 @@ a.slider-btn .alfa-plus {
 .icon-12:before {
 	content: "\e046";
 }
+.icon-13:before {
+	content: "\46";
+}
+.icon-14:before {
+	content: "\e02e";
+}
+.icon-15:before {
+	content: "\e0b6";
+}
+.icon-16:before {
+	content: "\e334";
+}
+.icon-17:before {
+	content: "\e29f";
+}
+.icon-18:before {
+	content: "\e29d";
+}
+.icon-19:before {
+	content: "\e1ac";
+}
 
 /* TABS RULES */
 .tabs-pane {
@@ -777,6 +898,9 @@ a.slider-btn .alfa-plus {
 .list-b {
 	padding: 0;
 	list-style: none;
+}
+.list-a a {
+	display: block;
 }
 .list-a li {
 	margin-bottom: 10px;
@@ -882,6 +1006,14 @@ a.slider-btn .alfa-plus {
 }
 .pd-0 {
 	padding: 0;
+}
+.pd-lt-1 {
+	padding-left: 15px;
+}
+@media (max-width: 768px) {
+	.pd-lt-1 {
+		padding-left: 0;
+	}
 }
 
 /* ANIMATION TIMER RULES */
