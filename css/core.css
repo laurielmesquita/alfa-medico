@@ -586,6 +586,12 @@ a.slider-btn .alfa-plus {
 .content-blog {
 	margin-bottom: 50px;
 }
+.content-blog.results {
+	border-bottom: 1px solid #cfcfcf;
+}
+.content-blog.results:last-of-type {
+	border: 0;
+}
 .content-inner:last-of-type,
 .content-blog:last-of-type {
 	margin-bottom: 0;
@@ -978,6 +984,13 @@ h1.title-front-news {
 .main-header {
 	background-color: #40b598;
 	color: #fff;
+}
+.green {
+	color: #40b598;
+}
+.alert {
+	padding-left: 0;
+	color: #ff4b64;
 }
 
 /* FOOTER RULES */
