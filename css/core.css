@@ -532,7 +532,7 @@ a.slider-btn .alfa-plus {
 .slider2:hover .flex-next {opacity: 1; filter:alpha(opacity=100); }
 .slider2:hover .flex-prev {opacity: 1; filter:alpha(opacity=100); }
 .slider2 .flexslider:hover .flex-next:hover, .flexslider:hover .flex-prev:hover {opacity: .8; filter:alpha(opacity=80); }
-.slider2 .flex-direction-nav .flex-disabled {opacity: .6!important; filter:alpha(opacity=60); cursor: default;}
+.slider2 .flex-direction-nav .flex-disabled {opacity: .2!important; filter:alpha(opacity=20); cursor: default;}
 .slider2 .flex-control-nav {display:none;}
 
 /* CONTENTS RULES */
