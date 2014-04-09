@@ -74,6 +74,9 @@ input[type="file"] > input[type="button"]::-moz-focus-inner {
 	background-color: #ebebeb;
 	border-radius: 0;
 }
+.breadcrumb a {
+	color: #777A7B;
+}
 .breadcrumb a:hover {
 	color: #ff4b64;
 }
